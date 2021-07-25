@@ -1,0 +1,512 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: 'Poppins', Verdana;
+  background-color: #fff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  display: inline;
+}
+
+.nav-container {
+  background: #FFF;
+  z-index: 700;
+  padding-top: 1rem!important;
+  padding-bottom: 1rem!important;
+  top: 0;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* NAVBAR */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .logo {
+  font-size: 3em;
+  font-style: normal;
+  font-weight: bold;
+  color: #34364A;
+}
+
+nav ul {
+  display: flex;
+}
+nav a {
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #34364A;
+}
+
+nav a:hover {
+  font-weight: bold;
+}
+
+nav ul li {
+  display: flex;
+  list-style-type: none;
+  margin-right: 20px;
+  align-items: center;
+}
+
+nav li:nth-last-of-type(1) {
+  margin: 0;
+}
+
+button {
+  border: transparent;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-family: "Poppins";
+  cursor: pointer;
+}
+
+.btn-abu {
+  border-radius: 50px;
+  background: #EDF1FA;
+}
+
+.btn-abu:hover {
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* AKhir Navbar */
+
+.jumbotron {
+  margin: 2vh auto;
+  padding: auto;
+}
+
+.jumbotron .wrapper{
+  background: 
+  linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)),
+    url(images/bali.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 80vh;
+  border-radius: 40px;
+  align-items: center;
+  display: flex;
+}
+
+.contain {
+  width: 70%;
+  color: white;
+  padding: 5%;
+  /* justify-content: space-between; */
+  
+}
+
+.contain h1 {
+  font-size: 3.5em;
+}
+
+.contain p {
+  font-size: 1.5em;
+}
+
+.btn-biru {
+  margin-top: 20px;
+  color: #ffffff;
+  background: #0A68F5;
+  border-radius: 10px;
+}
+
+/* About */
+.about {
+  margin: 30px auto ;
+  padding: 60px 0;
+}
+.about .wrapper {
+  display: flex;
+  height: 100%;
+}
+
+.img-about {
+  flex-grow: 1;
+  width: 80%;
+  padding: 0px 20px 30px ;
+}
+
+.box-image{
+  background: url(images/bromo.jpg) no-repeat center;
+  background-size: cover;
+  overflow: hidden;
+  max-width: 500px;
+  min-height: 600px;
+  box-shadow: 0px 4px 4px 3px rgba(0, 0, 0, 0.25);
+  border-radius: 1000px 1000px 0px 0px;
+}
+
+.box-image img {
+  object-fit: cover;
+  object-position: center;
+}
+
+.text-about {
+  flex-grow: 3;
+  width: 100%;
+  padding: 0px 0px;
+  place-items: center;
+}
+
+.text-about img {
+  margin-top: 5%;
+  max-width: 70%;
+}
+
+.text-about h1 {
+  margin-top: 5%;
+  font-style: bold;
+  align-items: flex-end;
+  font-size: 3em;
+  line-height: 100%;
+}
+
+.text-about p {
+  margin-top: 3%;
+  font-size: 1.5em;
+}
+
+.btn-detail {
+  margin-top: 3%;
+}
+
+/* Akhir About */
+
+/* Awal Travel */
+.travel {
+  background: #F6F8FD;
+}
+
+.travel .wrapper{
+  text-align: center;
+}
+
+.travel h1 {
+  font-size: 3.5em;
+}
+
+.contain-travel {
+  display: flex;
+  padding: 20px 0px;
+  align-items: center;
+  justify-content: center;
+}
+
+.travel-items {
+  flex-grow: 1;
+  flex-basis: 33.3333333333%;
+  max-height: 500px;
+  padding: 0 10px;
+}
+
+.travel-items .box {
+  border-radius: 60px;
+  overflow: hidden;
+}
+
+.featured-image {
+  margin-top: -60px;
+  margin-bottom: -10px;
+  max-width: 100%;
+  min-height: 500px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.caption {
+  margin-top: 30px;
+  position: relative;
+  z-index: 500;
+  color: #fff;
+}
+/* Akhir Travel */
+
+/* Aside */
+
+aside {
+  margin: 70px auto 30px ;
+}
+
+.profil {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profil-img {
+  max-width: 100%;
+  overflow: hidden;
+  height: 400px;
+  width: 30%;
+  box-shadow: 0px 4px 5px 3px rgba(18, 39, 114, 0.25);
+  border-radius: 30px 0px;
+}
+
+.foto {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.profil-text {
+  width: 30%;
+  padding-left: 20px;
+}
+
+.profil-text h1 {
+  line-height: 100%;
+  font-size: 3.5em;
+  margin-top: -80px;
+}
+
+.profil-text h2 {
+  margin-top: 10px;
+}
+.profil-text p {
+  margin-top: 10px;
+  font-size: 1.2em;
+}
+/* Akhir Aside */
+
+/* Button To Top page */
+.toTop {
+  padding: 0px 0px 0px 0px;
+  color: white;
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  filter: drop-shadow(1px 1px 5px #0A1329);
+  opacity: 0.5;
+}
+
+.toTop:hover {
+  opacity: 1;
+}
+
+/* footer */
+footer {
+  padding: 20px;
+  color: #FFFFFF;
+  background: #0A1329;
+  text-align: center;
+}
+/* Akhir footer */
+
+@media screen and (max-width: 1200px) {
+  body {
+    margin: 0 30px;
+  }
+  .nav-container {
+    margin: 0px -30px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .travel {
+    margin: 0px -30px;
+  }
+  footer {
+    margin: 0px -30px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .profil {
+    flex-direction: column;
+    margin: auto;
+  }
+  .profil-img {
+    width: 50%;
+  }
+  .foto {
+    margin-bottom: -10px;
+  }
+  .profil-text {
+    text-align: center;
+    padding-left: 0px;
+    width: 100%;
+  }
+  .profil-text h1 {
+    font-size: 2.5em;
+    margin-top: 20px;
+  }
+
+  .jumbotron .wrapper{
+    height: 70vh;
+  }
+  .contain {
+    width: 100%;
+  }
+
+  .about .wrapper {
+    flex-direction: column;
+  }
+  .img-about {
+    width: 100%;
+  }
+  .box-image {
+    max-width: 1000px;
+  }
+
+  .text-about img {
+    max-width: 20%;
+  }
+  .text-about h1 {
+    margin-top: 3%;
+    font-size: 2.5em;
+  }
+
+  .travel h1 {
+    padding: 0px 30px;
+  }
+  .contain-travel {
+    flex-direction: column;
+  }
+  .travel-items {
+    margin-top: 20px;
+    flex-basis: 100%;
+    align-items: center;
+    padding: 0px 30px;
+  }
+  .travel-items .box{
+    max-height: 500px;
+  }
+  .featured-image{
+    width: 100%;
+  }
+  .caption {
+    margin-top: 10px;
+    font-size: 2em;
+  }
+}
+
+.menu {
+  display: none;
+}
+.xIcon {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  nav ul li {
+    display: none;
+  }
+  .menu {
+    display: block;
+  }
+
+  .contain h1 {
+    font-size: 2em;
+  }
+  .contain p {
+    font-size: 1.2em;
+  }
+
+  .box-image {
+    min-height: 400px;
+  }
+
+  .travel h1 {
+    font-size: 2em;
+  }
+  .caption {
+    font-size: 1.2em;
+  }
+  .travel-items {
+    padding: 0px 10px;
+  }
+
+  .profil-img {
+    width: 90%;
+  }
+  .profil-text h1 {
+    font-size: 2em;
+  }
+
+  /* Menu Mobile */
+  .topnav.responsive .barIcon {
+    display: none;
+  }
+  .topnav.responsive .xIcon {
+    display: block;
+  }
+
+  .topnav.responsive {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .topnav.responsive .logo {
+    width: 100%;
+    font-size: 3em;
+    font-style: normal;
+    font-weight: bold;
+    color: #34364A;
+  }
+
+  .topnav.responsive ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px 20px;
+    border-bottom: 1px solid #34364a;
+  }
+  .topnav.responsive a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+  }
+
+  .topnav.responsive a:hover {
+    font-weight: bold;
+  }
+
+  .topnav.responsive ul li {
+    display: flex;
+    margin: 0px;
+    justify-content: center;
+    padding-bottom: 5px;
+  }
+
+  .topnav.responsive button {
+    border: transparent;
+    padding: 5px 10px;
+    font-size: 1em;
+    font-family: "Poppins";
+    cursor: pointer;
+    border-radius: 10px;
+  }
+
+  .btn-abu:hover {
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  .topnav.responsive .menu {
+    position: absolute;
+    right: 0;
+    top: 22px;
+  }
+}
+
